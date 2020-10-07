@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+	<TestRunParameters>
+		<Parameter name="apikey" value="MTTMAdmin" />
+		<Parameter name="secret" value="LotusElise57" />
+		<Parameter name="D400Key" value="D400Admin" />
+		<Parameter name="D400Secret" value="r3gression" />
+	</TestRunParameters>
+</RunSettings>
