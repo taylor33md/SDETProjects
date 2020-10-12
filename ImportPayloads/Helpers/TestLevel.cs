@@ -8,7 +8,7 @@ namespace ImportPayloads.Helpers
 {
     class TestLevel
     {
-        public const string BasePass = "BASEPASS";
+        public const string TestingStuff = "TESTING";
         public const string Consumer = "CONSUMER";
     }
 }

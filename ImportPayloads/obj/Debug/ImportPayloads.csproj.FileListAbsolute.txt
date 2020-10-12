@@ -45,8 +45,8 @@ C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\bin\Debug\Microsoft.
 C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\bin\Debug\nunit.framework.pdb
 C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\bin\Debug\nunit.framework.xml
 C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\bin\Debug\WebDriver.xml
-C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayloads.csprojAssemblyReference.cache
 C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayloads.csproj.CoreCompileInputs.cache
 C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayloads.csproj.CopyComplete
 C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayloads.dll
 C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayloads.pdb
+C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayloads.csprojAssemblyReference.cache

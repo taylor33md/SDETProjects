@@ -12,7 +12,7 @@ namespace ImportPayloads
         private CXResponse _response;
         private IWebDriver _driver;
 
-        [Test, Category(Helpers.TestLevel.BasePass)]
+        [Test, Category(Helpers.TestLevel.TestingStuff)]
         public void LightsOffTesting()
         {
             var payload = new CXPayload(Helpers.Payloads.MiniLoan);
@@ -24,8 +24,17 @@ namespace ImportPayloads
             _response = payload.Import(Helpers.Engines.QA);
 
         }
+        [Test, Category(Helpers.TestLevel.TestingStuff)]
         public void LightsOnTest()
         {
+            var payload = new CXPayload(Helpers.Payloads.MiniLoan);
+            var apikey = TestContext.Parameters["apikey"];
+            var secret = TestContext.Parameters["secret"];
+
+            payload.InjectApiKey(apikey, secret);
+
+            _response = payload.Import(Helpers.Engines.QA);
+
             var url = _response.Uri;
             _driver = new ChromeDriver();
             _driver.Navigate().GoToUrl(url);
