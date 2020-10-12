@@ -66,14 +66,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthenticationRequest.cs" />
+    <Compile Include="ConsumerLightsOff.cs" />
+    <Compile Include="ConsumerLightsOn.cs" />
     <Compile Include="DataIntegrityCheck.cs" />
     <Compile Include="DocumentRequestList.cs" />
     <Compile Include="Helpers\Engines.cs" />
     <Compile Include="Helpers\Payloads.cs" />
     <Compile Include="Helpers\TestLevel.cs" />
     <Compile Include="LightsOffTest.cs" />
-    <Compile Include="Loan_Program_Request.cs" />
+    <Compile Include="LoanProgramRequest.cs" />
+    <Compile Include="PrintToPDF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\Parameters.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

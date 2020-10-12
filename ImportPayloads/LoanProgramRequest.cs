@@ -8,14 +8,14 @@ using PayloadImport;
 
 namespace ImportPayloads
 {
-    class Loan_Program_Request
+    class LoanProgramRequest
     {
         private CXResponse _response;
         public string XmlResponse;
 
         [Test, Category(Helpers.TestLevel.Consumer)]
 
-        public void Loan_Import_Request()
+        public void Loan_Program_Request()
         {
             var payload = new CXPayload(Helpers.Payloads.Loan_Program_Request);
             var apikey = TestContext.Parameters["apikey"];
