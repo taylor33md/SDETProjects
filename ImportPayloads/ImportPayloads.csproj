@@ -75,6 +75,7 @@
     <Compile Include="Helpers\TestLevel.cs" />
     <Compile Include="LightsOffTest.cs" />
     <Compile Include="LoanProgramRequest.cs" />
+    <Compile Include="PrintToHTML.cs" />
     <Compile Include="PrintToPDF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\Parameters.cs" />

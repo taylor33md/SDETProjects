@@ -41,7 +41,8 @@ namespace ImportPayloads
                 Console.WriteLine("No existing loan available.", e);
             }
 
-            //need wait here
+            //wait
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             _driver.FindElement(By.Id("ctl00_contentHolder_DocProcessTop_lbPDF")).Click();
 
             string expectedFilePath = @"C:\Users\mattaylor\Downloads\TESTTest1111_Name1.pdf";

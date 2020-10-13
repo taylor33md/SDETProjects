@@ -15,8 +15,6 @@ namespace ImportPayloads
         [Test, Category(Helpers.TestLevel.Consumer)]
         public void Lights_On()
         {
-            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-
             var payload = new CXPayload(Helpers.Payloads.MiniLoanLightsOn);
             var apikey = TestContext.Parameters["apikey"];
             var secret = TestContext.Parameters["secret"];
@@ -42,6 +40,7 @@ namespace ImportPayloads
 
             var email = Settings.Parameters.email;
 
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             _driver.FindElement(By.Id("ctl00_contentHolder_DocProcessTop_lbESign")).Click();
             _driver.FindElement(By.Id("partyWizardStepBorrower")).Click();
             _driver.FindElement(By.Id("ctl00_contentHolder_partyWizardCtrl_txtNSEmailStep2party1"))
