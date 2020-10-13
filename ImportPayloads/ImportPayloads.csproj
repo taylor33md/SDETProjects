@@ -79,6 +79,7 @@
     <Compile Include="PrintToPDF.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\Parameters.cs" />
+    <Compile Include="VariousPackageTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

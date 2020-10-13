@@ -9,5 +9,7 @@ namespace ImportPayloads.Settings
     class Parameters
     {
         public const string email = "mtaylor@docutech.com";
+        public const string user = "MTTMADMIN";
+        public const string secret = "LotusElise57";
     }
 }
