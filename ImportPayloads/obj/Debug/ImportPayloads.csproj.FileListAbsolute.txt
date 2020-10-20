@@ -49,4 +49,3 @@ C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayl
 C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayloads.csproj.CopyComplete
 C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayloads.dll
 C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayloads.pdb
-C:\Users\mattaylor\source\repos\SDETProjects\ImportPayloads\obj\Debug\ImportPayloads.csprojAssemblyReference.cache

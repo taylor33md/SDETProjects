@@ -9,21 +9,14 @@ namespace ImportPayloads
 {
     class ConsumerLightsOn
     {
-        private CXResponse _response;
         private IWebDriver _driver;
 
         [Test, Category(Helpers.TestLevel.Consumer)]
         public void Lights_On()
         {
-            var payload = new CXPayload(Helpers.Payloads.MiniLoanLightsOn);
-            var apikey = TestContext.Parameters["apikey"];
-            var secret = TestContext.Parameters["secret"];
+            Setup response = new Setup();
+            string url = response.PayloadSetupURL(Helpers.Payloads.MiniLoanLightsOn);
 
-            payload.InjectApiKey(apikey, secret);
-
-            _response = payload.Import(Helpers.Engines.Consumer_Stage);
-
-            var url = _response.Uri;
             _driver = new ChromeDriver();
             _driver.Navigate().GoToUrl(url);
 
