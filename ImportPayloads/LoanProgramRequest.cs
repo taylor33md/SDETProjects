@@ -10,23 +10,14 @@ namespace ImportPayloads
 {
     class LoanProgramRequest
     {
-        private CXResponse _response;
-        public string XmlResponse;
-
         [Test, Category(Helpers.TestLevel.Consumer)]
 
         public void Loan_Program_Request()
         {
-            var payload = new CXPayload(Helpers.Payloads.Loan_Program_Request);
-            var apikey = TestContext.Parameters["apikey"];
-            var secret = TestContext.Parameters["secret"];
+            Setup response = new Setup();
+            string xml = response.PayloadSetupString(Helpers.Payloads.Loan_Program_Request);
 
-            payload.InjectApiKey(apikey, secret);
-
-            _response = payload.Import(Helpers.Engines.Consumer_Stage);
-            XmlResponse = _response.XmlResponse.ToString();
-
-            Assert.IsTrue(XmlResponse.Contains("<LOAN_PROGRAM_RESPONSE"), "Response not returned correctly, test failed.");
+            Assert.IsTrue(xml.Contains("<LOAN_PROGRAM_RESPONSE"), "Response not returned correctly, test failed.");
         }
     }
 }

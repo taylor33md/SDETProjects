@@ -9,22 +9,14 @@ namespace ImportPayloads
 {
     class DocumentRequestList
     {
-        private CXResponse _response;
-
         [Test, Category(Helpers.TestLevel.Consumer)]
 
         public void Document_Request_List()
         {
-            var payload = new CXPayload(Helpers.Payloads.Document_Request_List);
-            var apikey = TestContext.Parameters["apikey"];
-            var secret = TestContext.Parameters["secret"];
+            Setup response = new Setup();
+            string xml = response.PayloadSetupString(Helpers.Payloads.Document_Request_List);
 
-            payload.InjectApiKey(apikey, secret);
-
-            _response = payload.Import(Helpers.Engines.Consumer_Stage);
-
-            string xmlResponse = _response.XmlResponse.ToString();
-            Assert.IsTrue(xmlResponse.Contains("<EMORTGAGE_PACKAGE"));
+            Assert.IsTrue(xml.Contains("<EMORTGAGE_PACKAGE"));
         }
     }
 }
